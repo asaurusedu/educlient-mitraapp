@@ -1,0 +1,64 @@
+{
+  "kelas": [
+    {
+      "nama": "Kelas 7",
+      "id": "kelas-07",
+      "jenjang": "smp"
+    },
+    {
+      "nama": "Kelas 8",
+      "id": "kelas-08",
+      "jenjang": "smp"
+    },
+    {
+      "nama": "Kelas 9",
+      "id": "kelas-09",
+      "jenjang": "smp"
+    },
+    {
+      "nama": "Kelas 10",
+      "id": "kelas-10",
+      "jenjang": "sma"
+    },
+    {
+      "nama": "Kelas 11",
+      "id": "kelas-11",
+      "jenjang": "sma"
+    },
+    {
+      "nama": "Kelas 12",
+      "id": "kelas-12",
+      "jenjang": "sma"
+    }
+  ],
+  "matpel": [
+    {
+      "nama": "Bahasa Indonesia",
+      "id": "indo"
+    },
+    {
+      "nama": "Bahasa Inggris",
+      "id": "bing"
+    },
+    {
+      "nama": "Matematika",
+      "id": "matematika"
+    },
+    {
+      "nama": "Ilmu Pengetahuan Alam",
+      "id": "ipa"
+    },
+    {
+      "nama": "Ilmu Pengetahuan Sosial",
+      "id": "ips"
+    },
+    {
+      "nama": "Pendidikan Jasmani",
+      "id": "pjok"
+    },
+    {
+      "nama": "Pendidikan Kewarganegaraan",
+      "id": "pkn"
+    }
+  ]
+}
