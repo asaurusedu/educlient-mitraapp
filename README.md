@@ -1,3 +1,5 @@
+[![Lint Code Base](https://github.com/asaurusedu/educlient-mitraapp/actions/workflows/linter.yml/badge.svg)](https://github.com/asaurusedu/educlient-mitraapp/actions/workflows/linter.yml) [![Deploy to Production Server](https://github.com/asaurusedu/educlient-mitraapp/actions/workflows/deploy.yml/badge.svg)](https://github.com/asaurusedu/educlient-mitraapp/actions/workflows/deploy.yml)  [![Code Analysis and Security Check](https://github.com/asaurusedu/educlient-mitraapp/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/asaurusedu/educlient-mitraapp/actions/workflows/codeql-analysis.yml) [![Netlify Status](https://api.netlify.com/api/v1/badges/70ba7425-0370-47a1-adb5-3964788d63dc/deploy-status)](https://app.netlify.com/sites/asaurusedu-mitraapp/deploys)
+
 # AsaurusEdu Mitra App
 
 AsaurusEdu Mitra App is an application used by partners in developing media and working with the AsaurusEdu team. This application is the main gateway for partners in completing their tasks as well as an information center related to the development of the AsaurusEdu platform.
