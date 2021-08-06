@@ -9,7 +9,8 @@ jobs:
   announce:
     name: Announce to Discord Channels
     runs-on: ubuntu-latest
-  
+    environment: Production
+    
     steps:
       - name: Get Latest Code
         uses: actions/checkout@v2
