@@ -3,7 +3,7 @@ name: Deploy to Production Server
 on: 
   push: [ main]
   
- jobs:
+jobs:
   announce:
   name: Announce to Discord Channels
   runs-on: ubuntu-latest
@@ -14,5 +14,4 @@ on:
       
     - name: Send Annoucement to Discord
       shell: bash
-      run: |
-        wget --no-check-certificate --quiet --method POST --timeout=0 --header 'Content-Type: application/json' --body-data '{"content": "Mitra App Has Been Deployed to Production Server... :)"}' '${{ secrets.DISCORD_WEBHOOK }}'
+      run:  wget --no-check-certificate --quiet --method POST --timeout=0 --header 'Content-Type: application/json' --body-data '{"content": "Mitra App Has Been Deployed to Production Server... :)"}' '${{ secrets.DISCORD_WEBHOOK }}'
