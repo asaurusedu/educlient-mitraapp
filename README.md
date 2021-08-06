@@ -2,6 +2,14 @@
 
 AsaurusEdu Mitra App is an application used by partners in developing media and working with the AsaurusEdu team. This application is the main gateway for partners in completing their tasks as well as an information center related to the development of the AsaurusEdu platform.
 
+## Working Features
+
+Below is current supported features that in stable state and enough for production build.
+
+### 1. Send Message To Discord
+
+This app able to send user form input to the discord channel message using webhook. The application path is `GET /submit-materi`.
+
 ## Getting Started
 
 To get started running the project locally, please follow the steps below.
