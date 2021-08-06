@@ -1,0 +1,31 @@
+name: Lint Code Base
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-unit:
+    name: Lint Code Base
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+        
+      - name: Setup NodeJS Environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
+      - run: npm install
+      - run: npm test
+        
+      - name: Linting Codebase
+        uses: docker://ghcr.io/github/super-linter:slim-v4
+        env:
+          IGNORE_GITIGNORED_FILES: TRUE
+          VALIDATE_ALL_CODEBASE: TRUE
+          VALIDATE_JAVASCRIPT_STANDARD: FALSE
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
