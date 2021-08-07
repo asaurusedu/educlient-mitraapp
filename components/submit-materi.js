@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import dataForm from "../assets/dataForm.json";
 
-class SubmitMateri extends Component {
+class Submitmateri extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -52,7 +53,7 @@ class SubmitMateri extends Component {
       }),
     });
 
-    if (res.status === 200) {
+    if (res.status === 200 || 204) {
       this.setState({ submitSuccess: true, alreadySubmitted: true });
     } else {
       this.setState({ submitSuccess: false, alreadySubmitted: true });
@@ -115,7 +116,8 @@ class SubmitMateri extends Component {
                         className="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
                         placeholder="contoh: arasya@sekolahkita.sch.id"
                         onChange={this.handleChange.bind(this)}
-                        value={this.state.email}
+                        value={this.state.email == '' ? this.props.email : this.state.email}
+                        disabled="true"
                       />
                     </label>
                     <label className="block">
@@ -247,4 +249,4 @@ class SubmitMateri extends Component {
   }
 }
 
-export default SubmitMateri;
+export default Submitmateri;
