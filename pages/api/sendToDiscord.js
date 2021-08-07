@@ -1,4 +1,8 @@
-export default function sendToDiscord(req, res) {
+import { getSession } from 'next-auth/client'
+
+export default async function sendToDiscord(req, res) {
+
+  const session = await getSession({req})
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
@@ -55,6 +59,8 @@ export default function sendToDiscord(req, res) {
     redirect: "follow",
   };
 
+  if (session) {
+
   fetch(
     process.env.WEBHOOK_URL,
     requestOptions
@@ -62,4 +68,7 @@ export default function sendToDiscord(req, res) {
     .then((response) => res.status(200).json(response.text()))
     .then((result) => console.log(result))
     .catch((error) => res.status(503).send(error));
+  } else {
+    res.status(401).send('Unauthorized')
+  }
 }

@@ -53,7 +53,7 @@ class Submitmateri extends Component {
       }),
     });
 
-    if (res.status === 200) {
+    if (res.status === 200 || 204) {
       this.setState({ submitSuccess: true, alreadySubmitted: true });
     } else {
       this.setState({ submitSuccess: false, alreadySubmitted: true });
